@@ -1,0 +1,2 @@
+learn_msg_filter
+-DCATKIN_DEVEL_PREFIX=/home/ak/Git/test_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ak/Git/test_ws/install -G Unix Makefiles
