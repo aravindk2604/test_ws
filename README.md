@@ -25,6 +25,6 @@ rosrun learn_msg_filter combinedNode
 ```
 
 ### Documentation
-A moderate explanation of what happens in this ROS package is written as a blog post on my website [here]().  
+A moderate explanation of what happens in this ROS package is written as a blog post on my website [here](http://aravindkrishnan.com/example_of_message_filters/).  
 
 Suggestions to improve this example are most welcome. This was an attempt for me to understand and use message_filters for a datatype different from the commonly used *Image* and *CameraInfo* topics under *sensor_msgs* as given in the official ROS Wiki page.
