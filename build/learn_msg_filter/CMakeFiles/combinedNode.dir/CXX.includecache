@@ -35,7 +35,7 @@ message_filters/subscriber.h
 -
 message_filters/synchronizer.h
 -
-message_filters/sync_policies/exact_time.h
+message_filters/sync_policies/approximate_time.h
 -
 learn_msg_filter/NewString.h
 /home/ak/Git/test_ws/src/learn_msg_filter/src/learn_msg_filter/NewString.h
@@ -120,7 +120,7 @@ connection.h
 simple_filter.h
 /opt/ros/kinetic/include/message_filters/simple_filter.h
 
-/opt/ros/kinetic/include/message_filters/sync_policies/exact_time.h
+/opt/ros/kinetic/include/message_filters/sync_policies/approximate_time.h
 message_filters/synchronizer.h
 /opt/ros/kinetic/include/message_filters/sync_policies/message_filters/synchronizer.h
 message_filters/connection.h

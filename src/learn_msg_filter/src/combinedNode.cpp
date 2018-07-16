@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 #include <message_filters/subscriber.h>
 #include <message_filters/synchronizer.h>
-#include <message_filters/sync_policies/exact_time.h>
+#include <message_filters/sync_policies/approximate_time.h>
 #include "learn_msg_filter/NewString.h"
 #include <std_msgs/String.h>
 
@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 	message_filters::Subscriber<learn_msg_filter::NewString> f_sub(nh, "chatter", 1);
 	message_filters::Subscriber<learn_msg_filter::NewString> s_sub(nh, "anotherChatter", 1);
 
-	typedef sync_policies::ExactTime<learn_msg_filter::NewString, learn_msg_filter::NewString> MySyncPolicy;
+	typedef sync_policies::ApproximateTime<learn_msg_filter::NewString, learn_msg_filter::NewString> MySyncPolicy;
 
 	Synchronizer<MySyncPolicy> sync(MySyncPolicy(10), f_sub, s_sub);
 	sync.registerCallback(boost::bind(&callback, _1, _2));
